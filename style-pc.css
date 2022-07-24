@@ -1,0 +1,88 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+
+/* Pozicionálás */
+
+.profile-card {
+  width: 480px;
+  max-width: calc(100vw - 10px);
+  background-color: hsla(0, 0%, 100%, .2);
+  border-radius: 20px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+body {
+  height: 100vh;
+  background-image: url("assets/background5.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head, .contact {
+  text-align: center;
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+.content {
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+.head, .about {
+  margin-bottom: 10%;
+}
+
+.content {
+  padding: 5% 10%;
+}
+
+/* Profile-pic*/
+
+.profile-picture {
+  margin-top: -50px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+}
+
+img {
+   padding: 1px;
+   background-color: #666;
+   width: 20%;
+   height: 20%;
+   border-radius: 70%;
+   transform: scale(1.1);
+   transition: all 0.5s ease-in-out;
+} 
+
+ .about, .contacts {
+   text-align: center;
+   text-align: justify;
+}
+
+/* Contact links */
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  text-align: center;
+}
