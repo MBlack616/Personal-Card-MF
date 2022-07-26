@@ -9,43 +9,62 @@
 
 /* Pozicionálás */
 
-.profile-card {
-  width: 480px;
-  max-width: calc(100vw - 10px);
-}
-
 body {
-  height: 125vh;
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   background-image: url("assets/background5.jpg");
   background-size: cover;
 }
 
-.head, .contact {
-  text-align: center;
+.profile-card {
+  width: 480px;
+  max-width: calc(100vw - 10px);
+  position: relative;
+  height: 90vh;
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 20px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
 }
 
-.head, .content {
-  width: 90%;
+ .content {
+  left: 5%; 
+  right: 5%;
   margin: 0 auto;
-}
-
-.content {
+  text-align: justify;
   border-top: 1px solid hsla(0, 0%, 30%, .8);
+  position: absolute;
+  top: 140px;
 }
+ .contact {
+  text-align: center;
+ }
+
+.name-headline {
+  position: absolute;
+  right: 5px;
+  margin-top: 0;
+  text-align: center;
+} 
 
 .head, .about {
-  margin-bottom: 10%;
+   margin-bottom: 10%;
 }
 
-.content {
-  padding: 5% 10%;
+ .about {
+   display: flex;
+   justify-content: center;
 }
+
+  .content {
+  padding: 5% 10%;
+} 
 
 .profile-picture {
-  margin-top: -60px;
+  margin-top: -20px;
+  position: absolute;
+  left: 10px;
 }
 
 img {
@@ -61,12 +80,6 @@ img {
 img:hover {
   filter: grayscale(20%);
   transform: scale(1.1);
-}
-
-.profile-card {
-  background-color: hsla(0, 0%, 100%, .5);
-  border-radius: 4px;
-  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
 }
 
 ul {
