@@ -1,17 +1,37 @@
-/* CSS reset */
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
 
-* {
-  margin: 0;
-  padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
   box-sizing: border-box;
-  font-size: 100%;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 
 /* Pozicionálás */
 
 body {
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   background-image: url("assets/background5.jpg");
@@ -19,36 +39,54 @@ body {
 }
 
 .profile-card {
-  width: 480px;
-  max-width: calc(100vw - 10px);
-  position: relative;
-  height: 90vh;
+  width: 80%;
+  max-width: 400px;
+  height: auto;
   background-color: hsla(0, 0%, 100%, .5);
   border-radius: 20px;
   box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
 }
 
+.head {
+  display: flex;
+}
+
  .content {
-  left: 5%; 
+  width: 90%;
+  margin-left: 5px; 
   right: 5%;
   margin: 0 auto;
   text-align: justify;
   border-top: 1px solid hsla(0, 0%, 30%, .8);
-  position: absolute;
-  top: 140px;
+  font-family: 'Oxygen', sans-serif;
 }
  .contact {
   text-align: center;
  }
 
 .name-headline {
-  position: absolute;
-  right: 5px;
-  margin-top: 0;
   text-align: center;
+  margin: 5%;
+  
 } 
 
-.head, .about {
+h1 {
+  font-family: 'Rufina', serif;
+  font-size: 16pt;
+}
+
+.job {
+  margin: 5%;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.from {
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.about {
    margin-bottom: 10%;
 }
 
@@ -57,14 +95,15 @@ body {
    justify-content: center;
 }
 
-  .content {
+.content {
   padding: 5% 10%;
 } 
 
 .profile-picture {
-  margin-top: -20px;
-  position: absolute;
-  left: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 10px;
+  
 }
 
 img {
